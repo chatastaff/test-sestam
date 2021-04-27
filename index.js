@@ -18,16 +18,16 @@ const nekoclient = require("nekos.life");
 const neko = new nekoclient();
 client.on("ready", () => {
   console.log("♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔");
-  console.log("By black jack"); /////BLACK JACK
-  console.log("BLACK BOT");
+  console.log("By Mr Tiger"); /// Tiger
+  console.log("Mr BOT");
   console.log("ALLAH AKBAR");
   console.log("♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔♔");
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
   client.user.setActivity(
-    `dzha jwen owner by ahmad ${client.guilds.size} `
+    `Full sestam Mr Bot${client.guilds.size} `
   ); 
-  client.user.setStatus("idle"); /////by black jack
+  client.user.setStatus("idle"); ///// Tiger
   console.log(`Logined`);
 });
 
@@ -48,7 +48,7 @@ client.on("message", async msg => {
       .addField("**🌎Region server**: ", msg.guild.region)
       .addField("**Channel counts**: ", msg.guild.channels.size)
       .addField("**Roles counts**: ", msg.guild.roles.size)
-      .setColor("BLACK")
+      .setColor("RANDOM")
       .setFooter(`${msg.guild.name}`);
     msg.channel.sendEmbed(embed);
   }
@@ -188,7 +188,7 @@ if (msg.content.startsWith(prefix + "year")){
     
     let embed = new Discord.RichEmbed()
     .setAuthor("Next Year!", msg.author.displayAvatarURL)
-    .setColor("#000000")
+    .setColor("RANDOM")
     .setDescription(`There are **${days} days**, **${hours} hours**, **${minutes} minutes** and **${seconds} seconds** until **${next.getFullYear()}**!`)
     .setFooter(`Or, in short, ${moment.duration(next - now).humanize()}.`)
     msg.channel.send(embed)
@@ -227,18 +227,12 @@ client.on("message", message => {
     let mention = new Discord.RichEmbed()
       .setColor("black")
       .setDescription( `  
-     ** STAFF BLACK BOT
+     ** STAFF MR BOT
      
      
       
       <@670647563627659306> OWNER
-      
-      <@776494689703559208>  CODER
-      
-      <@710575111819886672> CODER
-      
-      <@618103290202423308> HELPER
-      
+     
    **
    `)
  
@@ -250,12 +244,12 @@ client.on("message", message => {
   if (message.content.startsWith(`<@${client.user.id}>`)) {
     if (message.author.bot || message.channel.type == "dm") return;
     let mention = new Discord.RichEmbed()
-      .setColor("black")
+      .setColor("RANDOM")
       .setDescription(
-        `   **Hi I'm Black Bot i'm my prefix ${prefix} **  
-  **Support Server** [ https://discord.gg/GmSYVCQMRU ] 
+        `   **Hi I'm MR Bot i'm my prefix ${prefix} **  
+  **Support Server** [ https://discord.gg/skbmKUP3sR ] 
   **Add bot ** [ https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2080374975 ] 
-  **Bot orders** [ • **b!help** • ]   `
+  **Bot orders** [ • **t!help** • ]   `
       )
  
       .setImage("https://images-ext-1.discordapp.net/external/RXd_Kc0_Ji0JNg67qAZcHPUOL8o60DLt3qecFb5FuC4/https/media.discordapp.net/attachments/777510905041911819/792459601193992202/image0.gif");
@@ -664,7 +658,7 @@ client.on("message", async message => {
         try {
           muterole = await message.guild.createRole({
             name: "Muted",
-            color: "#000000",
+            color: "#RANDOM",
             permissions: []
           });
           message.guild.channels.forEach(async (channel, id) => {
@@ -937,12 +931,12 @@ client.on("roleUpdate", (oldRole, newRole) => {
       logChannel.send(roleUpdateName);
     }
     if (oldRole.hexColor !== newRole.hexColor) {
-      if (oldRole.hexColor === "#000000") {
+      if (oldRole.hexColor === "RANDOM") {
         var oldColor = "`Default`";
       } else {
         var oldColor = oldRole.hexColor;
       }
-      if (newRole.hexColor === "#000000") {
+      if (newRole.hexColor === "RANDOM") {
         var newColor = "`Default`";
       } else {
         var newColor = newRole.hexColor;
@@ -2719,27 +2713,14 @@ client.on("message", message => {
        .setFooter("CREATED BY BLACK JACK")
       .setColor("BLACK").setDescription(` 
       **ADMIN**
- b!mute,b!unmute
- b!move,moveall
- b!ban
- b!unban all
- b!unban
- b!ccolor
- b!c text,voice
- b!kick
- b!clear <number>
- b!lock,unlock
- b!autoc <name role react>
- b!gstart
- b!uvb,vb
- b!role
- b!say,embed
- b!helprole
- b!warn
- b!temp on/off
- b!mutevoice,unmute voice
- b!blacklist add
- b!blacklist remove
+ \`b!mute,b!unmute\` ・ \`b!move,moveall\` ・ \`b!ban \` 
+ \`b!unban all\` ・ \`b!unban\` ・ \`b!ccolor\`
+ \`b!c text,voice ・ \`b!kick\` ・ \`b!clear <number>\`
+ \`b!lock,unlock\` ・\`b!autoc <name role react>\`
+ \`b!gstart\` ・\`b!uvb,vb\` ・ \`b!role\`
+ \`b!say,embed\` ・ \`b!helprole\` ・\`b!warn\`
+ \`b!temp on/off\` ・ \`b!mutevoice,unmute voice\`
+ \`b!blacklist add\` ・\`b!blacklist remove\`
  b!blacklist list
  b!undeafen,deafen
  b!info arole
