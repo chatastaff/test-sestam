@@ -25,7 +25,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
   client.user.setActivity(
-    `Full sestam Mr Bot${client.guilds.size} `
+    `Full sestam Mr Bot${client.guilds.size}`
   ); 
   client.user.setStatus("idle"); ///// Tiger
   console.log(`Logined`);
