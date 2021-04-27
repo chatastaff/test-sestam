@@ -2713,10 +2713,12 @@ client.on("message", message => {
        .setFooter("CREATED BY MrTiger")
       .setColor("RANDOM").setDescription(` 
       **ADMIN**
- \`b!mute,b!unmute ・ b!move,moveall ・ b!ban \` 
- \`b!unban all ・ b!unban ・ b!ccolor\`
- \`b!c text,voice ・ b!kick ・ b!clear <number>\`
- \`b!lock,unlock ・b!autoc <name role react>\`
+ \`b!mute,b!unmute ・ b!move,moveall\`
+ \`b!ban ・ b!unban all\` 
+ \`b!unban ・ b!ccolor\`
+ \`b!c text,voice ・ b!kick\`
+ \`b!clear <number> ・ b!lock,unlock\`
+ \`b!autoc <name role react>\`
  \`b!gstart ・b!uvb,vb ・ b!role\`
  \`b!say,embed ・ b!helprole ・b!warn\`
  \`b!temp on/off ・ b!mutevoice,unmute voice\`
@@ -2739,33 +2741,20 @@ client.on("message", message => {
        .setFooter("CREATED BY BLACK JACK")
       .setColor("BLACK").setDescription(` 
        **GENERAL COMMAND**
- b!count
- b!info roles
- b!rooms
- b!botinfo
- b!server
- b!support
- b!year
- b!daily
- b!info staff
- b!credit
- b!invites
- b!date
- b!xp
- b!draw <name>
- b!id
- b!youtube <name search>
- b!weather <location name>
- b!guild
- b!avatar
- b!top 
- b!top voice 
- b!top text
- b!report
- b!sbot
- b!about
- b!invite
- b!user
+ \`b!count ・ b!info roles\`
+ \`b!rooms ・ b!botinfo\`
+ \`b!server ・ b!support\`
+ \`b!year ・ b!daily\`
+ \`b!info staff ・ b!credit\`
+ \`b!invites ・ b!date\`
+ \`b!xp ・ b!draw <name>\`
+ \`b!id ・ b!youtube <name search>\`
+ \`b!weather <location name> ・ b!guild\`
+ \`b!avatar ・ b!top\`
+ \`b!top voice ・ b!top text\`
+ \`b!report ・ b!sbot\`
+ \`b!about ・ b!invite\` 
+ \`b!user\`
       
        `);
    message.channel.sendEmbed(embed);
@@ -2779,16 +2768,16 @@ client.on("message", message => {
        .setFooter("CREATED BY BLACK JACK")
       .setColor("BLACK").setDescription(` 
       **SECURITY COMMAND**
-b!anti ban[number]
-b!anti kick [number]
-b!anti roleC [number]
-b!anti roleD [number]
-b!anti channelD [number]
-b!anti channelC [number]
-b!anti time [number]
-b!antispam on/off
-b!antibot on/off 
-b!settings
+__b!anti ban[number]__
+__b!anti kick [number]__
+__b!anti roleC [number]__
+__b!anti roleD [number]__
+__b!anti channelD [number]__
+__b!anti channelC [number]__
+__b!anti time [number]__
+__b!antispam on/off__
+__b!antibot on/off__
+__b!settings__
       
        `);
    message.channel.sendEmbed(embed);
@@ -3139,7 +3128,7 @@ reaction2.on("collect", r => {
             "Requested By " + message.author.username,
             message.author.avatarURL
           )
-          .setColor("BLACK");
+          .setColor("RANDOM");
         message.channel.send(e);
       } else if (!role.startsWith("v!")) {
         let roleRe = args
@@ -3650,7 +3639,7 @@ client.on("message", message => {
       .forEach(m => {
         m.setVoiceChannel(author);
       })
-      .setTitle(`✽ **Black bot**`)
+      .setTitle(`✽ **Mr bot**`)
       .setImage("");
  
     message.channel.send(
@@ -3669,9 +3658,9 @@ if(!message.channel.guild) return;
     }
       const embed = new Discord.RichEmbed()
                          .addField('Requested by:', "<@" + message.author.id + ">")
-      .setColor("BLACK")
+      .setColor("RANDOM")
       .setImage(`${client.avatarURL}`)
-      .setFooter("BLACK BOT")
+      .setFooter("Mr BOT")
     message.channel.sendEmbed(embed);
   }
 });
