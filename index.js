@@ -2738,7 +2738,7 @@ client.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
        .setThumbnail(message.author.avatarURL)
-       .setFooter("CREATED BY BLACK JACK")
+       .setFooter("CREATED BY MrTiger")
       .setColor("BLACK").setDescription(` 
        **GENERAL COMMAND**
  \`b!count ・ b!info roles\`
@@ -2765,7 +2765,7 @@ client.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
        .setThumbnail(message.author.avatarURL)
-       .setFooter("CREATED BY BLACK JACK")
+       .setFooter("CREATED BY MrTiger")
       .setColor("BLACK").setDescription(` 
       **SECURITY COMMAND**
 __b!anti ban[number]__
@@ -2788,7 +2788,7 @@ client.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
        .setThumbnail(message.author.avatarURL)
-       .setFooter("CREATED BY BLACK JACK")
+       .setFooter("CREATED BY MrTiger")
       .setColor("BLACK").setDescription(` 
        **FUNNY COMAND**
  b!slap
@@ -2809,7 +2809,7 @@ client.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
        .setThumbnail(message.author.avatarURL)
-       .setFooter("CREATED BY BLACK JACK")
+       .setFooter("CREATED BY MrTiger")
       .setColor("BLACK").setDescription(` 
        **FUNNY COMAND**
  b!slots
