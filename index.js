@@ -2690,8 +2690,8 @@ client.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
        .setThumbnail(message.author.avatarURL)
-       .setFooter("CREATED BY BLACK JACK")
-      .setColor("BLACK").setDescription(` 
+       .setFooter("CREATED BY MrTiger")
+      .setColor("RANDOM").setDescription(` 
 
 b!help1 => moderation command
 b!help2 => general command
@@ -2710,30 +2710,22 @@ client.on("message", message => {
     let embed = new Discord.RichEmbed()
       .setAuthor(message.author.username)
        .setThumbnail(message.author.avatarURL)
-       .setFooter("CREATED BY BLACK JACK")
-      .setColor("BLACK").setDescription(` 
+       .setFooter("CREATED BY MrTiger")
+      .setColor("RANDOM").setDescription(` 
       **ADMIN**
- \`b!mute,b!unmute\` ・ \`b!move,moveall\` ・ \`b!ban \` 
- \`b!unban all\` ・ \`b!unban\` ・ \`b!ccolor\`
- \`b!c text,voice ・ \`b!kick\` ・ \`b!clear <number>\`
- \`b!lock,unlock\` ・\`b!autoc <name role react>\`
- \`b!gstart\` ・\`b!uvb,vb\` ・ \`b!role\`
- \`b!say,embed\` ・ \`b!helprole\` ・\`b!warn\`
- \`b!temp on/off\` ・ \`b!mutevoice,unmute voice\`
- \`b!blacklist add\` ・\`b!blacklist remove\`
- b!blacklist list
- b!undeafen,deafen
- b!info arole
- b!hide all,b!unhide all
- b!nick,help nick
- b!listbans
- b!setWelcomer <channel name>
- b!toggleWelcome on/off
- b!toggleDmwelcome on/off
- b!toggleInvitedby on/off
- b!autorole <role name>
- b!setTime
- b!setstats
+ \`b!mute,b!unmute ・ b!move,moveall ・ b!ban \` 
+ \`b!unban all ・ b!unban ・ b!ccolor\`
+ \`b!c text,voice ・ b!kick ・ b!clear <number>\`
+ \`b!lock,unlock ・b!autoc <name role react>\`
+ \`b!gstart ・b!uvb,vb ・ b!role\`
+ \`b!say,embed ・ b!helprole ・b!warn\`
+ \`b!temp on/off ・ b!mutevoice,unmute voice\`
+ \`b!blacklist add ・ b!blacklist remove\`
+ \`b!blacklist list ・ b!undeafen,deafen ・ b!info arole\`
+ \`b!hide all,b!unhide all ・ b!nick,help nick ・ b!listbans\`
+ \`b!setWelcomer <channel name> ・ b!toggleWelcome on/off\`
+ \`b!toggleDmwelcome on/off ・ b!toggleInvitedby on/off\`
+ \`b!autorole <role name> ・ b!setTime ・ b!setstats\`
       
        `);
    message.channel.sendEmbed(embed);
